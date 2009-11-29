@@ -28,7 +28,9 @@ BuildRequires: perl(POE)
 BuildRequires: perl(POE::Component::Client::TCP)
 BuildRequires: perl(Readonly)
 BuildRequires: perl(Sub::Exporter)
+BuildRequires: perl(Test::Corpus::Audio::MPD)
 BuildRequires: perl(Test::More)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -44,11 +46,10 @@ Commands are then sent to the server as messages are passed.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
@@ -62,5 +63,3 @@ rm -rf %buildroot
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
