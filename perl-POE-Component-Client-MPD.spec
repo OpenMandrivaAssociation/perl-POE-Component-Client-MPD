@@ -1,5 +1,5 @@
 %define upstream_name    POE-Component-Client-MPD
-%define upstream_version 1.093320
+%define upstream_version 1.093390
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
