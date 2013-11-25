@@ -1,2 +1,4 @@
+removed_sources:
+  POE-Component-Client-MPD-1.100430.tar.gz: 2181f43cbf20dbeb2f1d6babbfdc98f9d8cff8fd
 sources:
-  "POE-Component-Client-MPD-1.100430.tar.gz": 2181f43cbf20dbeb2f1d6babbfdc98f9d8cff8fd
+  POE-Component-Client-MPD-1.121670.tar.gz: c20eacd88f88a5b314b6bba5f0afd42e92fd05db
