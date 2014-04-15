@@ -32,6 +32,7 @@ BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Sub::Exporter)
 BuildRequires:	perl(Test::Corpus::Audio::MPD)
 BuildRequires:	perl(Test::More)
+BuildRequires:	perl(namespace::autoclean)
 
 BuildArch:	noarch
 
@@ -59,28 +60,3 @@ perl Build.PL installdirs=vendor
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-
-%changelog
-* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 1.100.430-2mdv2011.0
-+ Revision: 655427
-- add br
-- rebuild for updated spec-helper
-
-* Sat Feb 13 2010 Jérôme Quelin <jquelin@mandriva.org> 1.100.430-1mdv2011.0
-+ Revision: 505270
-- update to 1.100430
-
-* Sun Dec 06 2009 Jérôme Quelin <jquelin@mandriva.org> 1.93.390-1mdv2010.1
-+ Revision: 474075
-- update to 1.093390
-
-* Sun Nov 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.93.320-1mdv2010.1
-+ Revision: 471073
-- adding missing buildrequires:
-- import perl-POE-Component-Client-MPD
-
-
-* Sun Nov 29 2009 cpan2dist 1.093320-1mdv
-- initial mdv release, generated with cpan2dist
-
