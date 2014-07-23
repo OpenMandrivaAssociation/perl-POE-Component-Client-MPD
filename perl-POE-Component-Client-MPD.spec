@@ -12,6 +12,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(List::AllUtils)
 BuildRequires:	perl(Audio::MPD::Common::Item)
 BuildRequires:	perl(Audio::MPD::Common::Stats)
 BuildRequires:	perl(Audio::MPD::Common::Status)
