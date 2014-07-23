@@ -1,5 +1,5 @@
 %define upstream_name    POE-Component-Client-MPD
-%define upstream_version 1.121670
+%define upstream_version 2.000
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	POE component to speak with MPD servers
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/POE/POE-Component-Client-MPD-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Audio::MPD::Common::Item)
